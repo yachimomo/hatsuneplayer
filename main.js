@@ -368,7 +368,7 @@ miku.addEventListener("mousedown",(event)=>{
     if (buttonctl.tf&&player.isPlaying) {
         if (Math.abs(beatc-pos)<100) {
             effect(2,event);
-            scoreCounter += comboCounter*2 + scoreinc;
+            scoreCounter += comboCounter*3 + scoreinc;
             comboCounter++;
             numChange(scoredig,scoreCounter);
             numChange(combodig,comboCounter,1);
@@ -533,7 +533,7 @@ for (let index = 0; index < itemnum; index++) {
         };
 
         //アイテム増加でクリックによるスコアもアップ
-        scoreinc = 1 + Math.floor(itemct[0]/2) + Math.floor(itemct[1]*2) + Math.floor(itemct[2]*3) + Math.floor(itemct[3]*6)
+        scoreinc = 1 + itemct[0] + itemct[1]*4 + itemct[2]*6 + itemct[3]*12
     });
 };
 
