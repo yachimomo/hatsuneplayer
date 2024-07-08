@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>初音プレイヤー</title>
+    <link rel="stylesheet" href="main.css">
+    <script>
+        (function(d) {
+          var config = {
+            kitId: 'kaa5zod',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+      </script>
+</head>
+<body>
+    <div class="mainArea">
+        <div class="walkArea">
+            <div class="walkArea-bg"></div>
+            <div class="walkArea-f"></div>
+            <div id="miku"></div>
+            <div class="effect"></div>
+            <div class="effect"></div>
+            <div class="effect"></div>
+            <div class="effect"></div>
+            <ul class="score">
+                <li class="head scorehead"></li>
+                <li class="scoredig"></li>
+                <li class="scoredig"></li>
+                <li class="scoredig"></li>
+                <li class="scoredig"></li>
+                <li class="scoredig"></li>
+                <li class="scoreplus"></li>
+            </ul>
+            <ul class="combo">
+                <li class="head combohead"></li>
+                <li class="combodig"></li>
+                <li class="combodig"></li>
+                <li class="combodig"></li>
+                <li class="combodig"></li>
+            </ul>
+            <ul class="item"></ul>
+            <ul class="item"></ul>
+            <ul class="item"></ul>
+            <ul class="item"></ul>
+        </div>
+        <div class="mPlayerArea end" id="mPlayer">
+            <div id="lyrics">ミクをクリック！<br><br>
+                スコアをためてアイテムGET<br><br>
+                リズムに乗ると獲得スコアUP!!<br><br>
+                ＋ーでタイミング調整
+            </div>
+            <div id="timingup" class="button"></div>
+            <div id="timingdown" class="button"></div>
+            <div id="nextsong" class="button"></div>
+            <div id="backsong" class="button"></div>
+            <div id="playbutton" class="button"></div>
+            <div id="buttonArea"></div>
+        </div>
+        <div class="option">
+            <div class="itembtn">
+                <ul class="cost">
+                    <li class="costdig cdig1"></li>
+                    <li class="costdig cdig2"></li>
+                    <li class="costdig cdig3"></li>
+                    <li class="costdig cdig4"></li>
+                </ul>
+                <div class="iticon"></div>
+                <div class="itembtnmax"></div>
+            </div>
+            <div class="itembtn">
+                <ul class="cost">
+                    <li class="costdig cdig1"></li>
+                    <li class="costdig cdig2"></li>
+                    <li class="costdig cdig3"></li>
+                    <li class="costdig cdig4"></li>
+                </ul>
+                <div class="iticon"></div>
+                <div class="itembtnmax"></div>
+            </div>
+            <div class="itembtn">
+                <ul class="cost">
+                    <li class="costdig cdig1"></li>
+                    <li class="costdig cdig2"></li>
+                    <li class="costdig cdig3"></li>
+                    <li class="costdig cdig4"></li>
+                </ul>
+                <div class="iticon"></div>
+                <div class="itembtnmax"></div>
+            </div>
+            <div class="itembtn">
+                <ul class="cost">
+                    <li class="costdig cdig1"></li>
+                    <li class="costdig cdig2"></li>
+                    <li class="costdig cdig3"></li>
+                    <li class="costdig cdig4"></li>
+                </ul>
+                <div class="iticon"></div>
+                <div class="itembtnmax"></div>
+            </div>
+        </div>
+    </div>
+    <div id="media"></div>
+    
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/textalive-app-api/dist/index.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
