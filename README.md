@@ -117,7 +117,7 @@
 
 歌詞：[https://piapro.jp/t/o3_D](https://piapro.jp/t/o3_D).
 
-**4. 「未来交響曲」**  ヤマギシコージ さん さん
+**4. 「未来交響曲」**  ヤマギシコージ さん
 
 楽曲：[https://piapro.jp/t/Rejk](https://piapro.jp/t/Rejk).
 
