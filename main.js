@@ -223,7 +223,7 @@ player.addListener({
 
                 //アイテムによるスコア生成
                 itemct.forEach((element,index) => {
-                    scoreCounter += element*itemgenescore[index];
+                    scoreCounter += Math.floor(element*itemgenescore[index] + 0.5);
                     numChange(scoredig,scoreCounter);
                 });
             };
@@ -405,7 +405,7 @@ cost.forEach(costElement => {
 let iticon = document.querySelectorAll(".iticon");              //アイテムボタンのアイコン
 let itemli=[ [], [], [], []];                                   //生成するアイテムを入れる配列
 let itemct=[0,0,0,0];                                           //アイテムを生成した個数カウント
-const itemgenescore = [1,15,50,125];                            //アイテム生成スコア
+const itemgenescore = [0.5,5,25,100];                           //アイテム生成スコア
 const itemcost = [39, 393, 3939, 9999];                         //必要コスト
 const itemmax = [20, 6, 4, 2];                                  //出現上限
 //アイテムボタン有効無効管理
